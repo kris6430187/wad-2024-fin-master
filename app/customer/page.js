@@ -4,7 +4,7 @@ import { useForm } from "react-hook-form";
 import { useEffect, useState } from "react";
 
 export default function CustomerPage() {
-  const APIBASE = process.env.NEXT_PUBLIC_API_URL || '/api';
+  const APIBASE = '/api';
   const { register, handleSubmit, reset } = useForm();
   const [customers, setCustomers] = useState([]);
   const [editMode, setEditMode] = useState(false);

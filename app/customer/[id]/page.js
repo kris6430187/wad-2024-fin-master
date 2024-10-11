@@ -3,7 +3,7 @@ import { useRouter } from 'next/navigation';
 import { useEffect, useState } from 'react';
 
 export default function CustomerDetailPage({ params }) {
-  const API_BASE = process.env.NEXT_PUBLIC_API_URL || '/api';
+  const API_BASE = '/api';
   const router = useRouter();
   const [customer, setCustomer] = useState(null);
 
